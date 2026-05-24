@@ -27,7 +27,7 @@ from langchain_core.output_parsers import StrOutputParser
 # PAGE CONFIG
 # =========================
 st.set_page_config(
-    page_title="YouTube RAG Chatbot",
+    page_title=" RAG Chatbot",
     page_icon="🎥",
     layout="wide",
     initial_sidebar_state="expanded",
