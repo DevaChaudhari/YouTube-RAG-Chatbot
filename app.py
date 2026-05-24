@@ -109,7 +109,7 @@ st.markdown(
 st.markdown(
     """
     <div class="hero">
-        <h1>🎥 YouTube RAG Chatbot</h1>
+        <h1>🎥 RAG Chatbot</h1>
         <p>Ask focused questions from YouTube transcripts with Gemini-powered retrieval.</p>
     </div>
     """,
