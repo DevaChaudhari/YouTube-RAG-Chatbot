@@ -27,7 +27,7 @@ from langchain_core.output_parsers import StrOutputParser
 # PAGE CONFIG
 # =========================
 st.set_page_config(
-    page_title=" RAG Chatbot",
+    page_title="YouTube RAG Chatbot",
     page_icon="🎥",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -109,7 +109,7 @@ st.markdown(
 st.markdown(
     """
     <div class="hero">
-        <h1>🎥 RAG Chatbot</h1>
+        <h1>🎥YouTube RAG Chatbot</h1>
         <p>Ask focused questions from YouTube transcripts with Gemini-powered retrieval.</p>
     </div>
     """,
