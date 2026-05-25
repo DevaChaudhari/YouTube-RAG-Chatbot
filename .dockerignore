@@ -2,4 +2,6 @@
 venv/
 __pycache__/
 *.pyc
-k8s/secret.yaml
+.git/
+.github/
+.streamlit/

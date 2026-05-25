@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: youtube-rag-chatbot
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: youtube-rag-chatbot
+  template:
+    metadata:
+      labels:
+        app: youtube-rag-chatbot
+    spec:
+      containers:
+        - name: youtube-rag-chatbot
+          image: devachaudhari/youtube-rag-chatbot:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8501
+          env:
+            - name: GOOGLE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: youtube-rag-secrets
+                  key: GOOGLE_API_KEY
